@@ -1,0 +1,12 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ApiAnimals.Dtos;
+public class DepartamentoDto
+{
+    public string NombreDep { get; set; }
+    public string IdPais { get; set; }
+    public PaisDto Paises { get; set; }
+}
