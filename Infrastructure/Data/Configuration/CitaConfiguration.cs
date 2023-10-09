@@ -18,7 +18,7 @@ public class Configuration : IEntityTypeConfiguration<Cita>
         .HasColumnType("date");
 
         builder.Property(p => p.Hora)
-        .HasColumnType("date");
+        .HasColumnType("time");
 
         builder.HasOne(p => p.Clientes)
         .WithMany(p => p.Citas)
