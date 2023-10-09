@@ -8,6 +8,7 @@ namespace Core.Entities;
 
 public class ClienteDireccion : BaseEntity
 {
+    [Required]
     public int IdCliente { get; set; }
     public Cliente Clientes { get; set; }
     public string TipoDeVia { get; set; }
