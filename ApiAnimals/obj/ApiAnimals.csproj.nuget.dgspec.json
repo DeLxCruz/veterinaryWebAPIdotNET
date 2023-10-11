@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj": {}
+    "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj": {
+    "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj",
+        "projectUniqueName": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj",
         "projectName": "ApiAnimals",
-        "projectPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj",
-        "packagesPath": "C:\\Users\\DeLaCruz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\ApiAnimals\\obj\\",
+        "projectPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\ApiAnimals\\ApiAnimals.csproj",
+        "packagesPath": "C:\\Users\\abcd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\ApiAnimals\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DeLaCruz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\abcd\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -108,17 +108,17 @@
         }
       }
     },
-    "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Core\\Core.csproj": {
+    "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\DeLaCruz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Core\\obj\\",
+        "projectPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\abcd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DeLaCruz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\abcd\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -161,17 +161,17 @@
         }
       }
     },
-    "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DeLaCruz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\abcd\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\DeLaCruz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\abcd\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -183,8 +183,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\DeLaCruz\\Documents\\CAMPUS\\dotNET\\veterinaryWebAPIdotNET\\Core\\Core.csproj"
+              "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\abcd\\Documents\\DeLxCruz\\.NET\\veterinaryWebAPIdotNET\\Core\\Core.csproj"
               }
             }
           }
