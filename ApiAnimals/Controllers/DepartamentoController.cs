@@ -70,7 +70,7 @@ public class DepartamentoController : BaseControllerApi
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<DepartamentoDto>> Put(int id, DepartamentoDto departmentDto)
+    public async Task<ActionResult<DepartamentoDto>> Put(int id, [FromBody] DepartamentoDto departmentDto)
     {
         if (departmentDto.Id == 0)
         {
@@ -94,8 +94,8 @@ public class DepartamentoController : BaseControllerApi
     }
 
     [HttpDelete("{id}")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
 
     public async Task<ActionResult<DepartamentoDto>> Delete(int id)
     {
