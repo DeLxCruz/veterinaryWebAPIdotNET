@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 namespace ApiAnimals.Dtos;
 public class ClienteTelefonoDto
 {
-    public ClienteDto Clientes { get; set; }
+    public int Id { get; set; }
+    public ClienteDto Cliente { get; set; }
     public string Numero { get; set; }
 }

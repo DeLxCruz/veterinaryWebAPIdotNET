@@ -13,7 +13,7 @@ namespace Core.Interfaces
         IClienteRepository Clientes { get;}
         IClienteDireccionRepository ClienteDirecciones { get;}
         ICitaRepository Citas { get;}
-        IClienteTelefonoRepository ClienteTel { get;}
+        IClienteTelefonoRepository ClienteTelefonos { get;}
         IDepartamento Departamentos { get;}
         IMascotaRepository Mascotas { get;}
         IRazaRepository Razas { get;}
