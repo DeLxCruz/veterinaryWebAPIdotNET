@@ -89,7 +89,7 @@ namespace Infrastructure.UnitOfWork
             }
         }
 
-        public IClienteTelefonoRepository ClienteTel
+        public IClienteTelefonoRepository ClienteTelefonos
         {
             get
             {
