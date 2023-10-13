@@ -70,7 +70,7 @@ public class ClienteDireccionController : BaseControllerApi
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<ClienteDireccionDto>> Put(int id, ClienteDireccionDto clientAddressDto)
+    public async Task<ActionResult<ClienteDireccionDto>> Put(int id, [FromBody] ClienteDireccionDto clientAddressDto)
     {
         if (clientAddressDto.Id == 0)
         {
