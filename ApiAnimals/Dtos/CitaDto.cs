@@ -7,7 +7,8 @@ using System.ComponentModel.DataAnnotations;
 namespace ApiAnimals.Dtos;
 public class CitaDto
 {
-    public DateTime Fecha { get; set; }
+    public int Id { get; set; }
+    public DateOnly Fecha { get; set; }
     public TimeOnly Hora { get; set; }
     public ClienteDto Clientes { get; set; }
     public MascotaDto Mascota { get; set; }
