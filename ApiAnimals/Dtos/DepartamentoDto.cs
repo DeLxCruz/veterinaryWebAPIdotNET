@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 namespace ApiAnimals.Dtos;
 public class DepartamentoDto
 {
+    public int Id { get; set; }
     public string NombreDep { get; set; }
     public string IdPais { get; set; }
     public PaisDto Paises { get; set; }
