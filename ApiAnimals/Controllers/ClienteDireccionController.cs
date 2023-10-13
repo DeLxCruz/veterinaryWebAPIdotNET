@@ -62,7 +62,7 @@ public class ClienteDireccionController : BaseControllerApi
         }
 
         clientAddressDto.Id = clientAddress.Id;
-        return CreatedAtAction(nameof(Post), new { id = clientAddressDto.Id }, clientAddress);
+        return CreatedAtAction(nameof(Post), new { id = clientAddressDto.Id }, clientAddressDto);
     }
 
     [HttpPut("{id}")]
@@ -94,8 +94,8 @@ public class ClienteDireccionController : BaseControllerApi
     }
 
     [HttpDelete("{id}")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
 
     public async Task<ActionResult<ClienteDireccionDto>> Delete(int id)
     {

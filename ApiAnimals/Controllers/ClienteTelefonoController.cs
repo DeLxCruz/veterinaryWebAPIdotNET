@@ -62,7 +62,7 @@ public class ClienteTelefonoController : BaseControllerApi
         }
 
         clientPhoneDto.Id = clientPhone.Id;
-        return CreatedAtAction(nameof(Get), new { id = clientPhone.Id }, clientPhone);
+        return CreatedAtAction(nameof(Post), new { id = clientPhoneDto.Id }, clientPhoneDto);
     }
 
     [HttpPut("{id}")]

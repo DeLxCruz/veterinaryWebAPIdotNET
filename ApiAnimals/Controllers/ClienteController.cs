@@ -62,7 +62,7 @@ public class ClienteController : BaseControllerApi
             return BadRequest();
         }
 
-        return CreatedAtAction(nameof(Get), new { id = client.Id }, client);
+        return CreatedAtAction(nameof(Post), new { id = clientDto.Id }, clientDto);
     }
 
     [HttpPut("{id}")]
@@ -93,8 +93,8 @@ public class ClienteController : BaseControllerApi
     }
 
     [HttpDelete("{id}")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
 
     public async Task<ActionResult<ClienteDto>> Delete(int id)
     {

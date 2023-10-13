@@ -62,7 +62,7 @@ public class DepartamentoController : BaseControllerApi
             return BadRequest();
         }
 
-        return CreatedAtAction(nameof(Get), new { id = department.Id }, department);
+        return CreatedAtAction(nameof(Post), new { id = departmentDto.Id }, departmentDto);
     }
 
     [HttpPut("{id}")]
@@ -108,7 +108,7 @@ public class DepartamentoController : BaseControllerApi
 
         _unitOfWork.Departamentos.Remove(department);
         await _unitOfWork.SaveAsync();
-        return _mapper.Map<DepartamentoDto>(department);
+        return NoContent();
     }
 
 }

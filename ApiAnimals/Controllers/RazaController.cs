@@ -9,12 +9,12 @@ using Core.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiAnimals.Controllers;
-public class MascotaController : BaseControllerApi
+public class RazaController : BaseControllerApi
 {
     private readonly IUnitOfWork _unitOfWork;
     private readonly IMapper _mapper;
 
-    public MascotaController(IUnitOfWork unitOfWork, IMapper mapper)
+    public RazaController(IUnitOfWork unitOfWork, IMapper mapper)
     {
         _unitOfWork = unitOfWork;
         _mapper = mapper;
@@ -24,45 +24,45 @@ public class MascotaController : BaseControllerApi
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-    public async Task<ActionResult<IEnumerable<MascotaDto>>> Get()
+    public async Task<ActionResult<IEnumerable<RazaDto>>> Get()
     {
-        var pets = await _unitOfWork.Mascotas.GetAllAsync();
-        return _mapper.Map<List<MascotaDto>>(pets);
+        var breeds = await _unitOfWork.Razas.GetAllAsync();
+        return _mapper.Map<List<RazaDto>>(breeds);
     }
 
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<MascotaDto>> Get(int id)
+    public async Task<ActionResult<RazaDto>> Get(int id)
     {
-        var pet = await _unitOfWork.Mascotas.GetByIdAsync(id);
+        var breed = await _unitOfWork.Razas.GetByIdAsync(id);
 
-        if (pet == null)
+        if (breed == null)
         {
             return NotFound();
         }
 
-        return _mapper.Map<MascotaDto>(pet);
+        return _mapper.Map<RazaDto>(breed);
     }
 
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
 
-    public async Task<ActionResult<MascotaDto>> Post(MascotaDto petDto)
+    public async Task<ActionResult<Raza>> Post(RazaDto breedDto)
     {
-        var pet = _mapper.Map<Mascota>(petDto);
-        this._unitOfWork.Mascotas.Add(pet);
+        var breed = _mapper.Map<Raza>(breedDto);
+        this._unitOfWork.Razas.Add(breed);
         await _unitOfWork.SaveAsync();
 
-        if (pet == null)
+        if (breed == null)
         {
             return BadRequest();
         }
 
-        petDto.Id = pet.Id;
-        return CreatedAtAction(nameof(Post), new { id = petDto.Id }, petDto);
+        return CreatedAtAction(nameof(Post), new { id = breedDto.Id }, breedDto);
     }
 
     [HttpPut("{id}")]
@@ -70,47 +70,44 @@ public class MascotaController : BaseControllerApi
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<MascotaDto>> Put(int id, [FromBody] MascotaDto petDto)
+    public async Task<ActionResult<RazaDto>> Put(int id, RazaDto breedDto)
     {
-        if (petDto.Id == 0)
+        if (breedDto.Id == 0)
         {
-            petDto.Id = id;
+            breedDto.Id = id;
         }
 
-        if (petDto.Id != id)
+        if (breedDto.Id != id)
         {
             return BadRequest();
         }
 
-        if (petDto == null)
+        if (breedDto == null)
         {
             return NotFound();
         }
 
-        var pet = _mapper.Map<Mascota>(petDto);
-        _unitOfWork.Mascotas.Update(pet);
+        var breed = _mapper.Map<Raza>(breedDto);
+        _unitOfWork.Razas.Update(breed);
         await _unitOfWork.SaveAsync();
-        return petDto;
+        return breedDto;
     }
 
     [HttpDelete("{id}")]
-    [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
 
-    public async Task<ActionResult<MascotaDto>> Delete(int id)
+    public async Task<ActionResult<RazaDto>> Delete(int id)
     {
-        var pet = await _unitOfWork.Mascotas.GetByIdAsync(id);
+        var breed = await _unitOfWork.Razas.GetByIdAsync(id);
 
-        if (pet == null)
+        if (breed == null)
         {
             return NotFound();
         }
 
-        _unitOfWork.Mascotas.Remove(pet);
+        _unitOfWork.Razas.Remove(breed);
         await _unitOfWork.SaveAsync();
         return NoContent();
     }
-
-
-    
 }
